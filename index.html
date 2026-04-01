@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mdshamim0403 | Md Shamim Personal Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Shamim Personal Website</title>
 
-<meta name="description" content="mdshamim0403 official personal website of Md Shamim freelancer from Naogaon Bangladesh">
-
-<meta name="keywords" content="mdshamim0403, Md Shamim, shamim portfolio, freelancer shamim">
-
-<meta name="author" content="Md Shamim">
   <style>
     * {
       margin: 0;
@@ -20,7 +15,7 @@
 
     body {
       background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: rgba(255, 255, 255, 0.445);
+      color: rgba(255, 255, 255, 0.85);
       line-height: 1.6;
     }
 
@@ -28,44 +23,71 @@
       width: 90%;
       max-width: 1100px;
       margin: auto;
+      padding-bottom: 40px;
     }
 
-    header {
+    .header {
+      position: relative;
       text-align: center;
-      padding: 50px 20px;
+      margin-top: 30px;
+      margin-bottom: 40px;
     }
 
-    header img {
-      width: 180px;
-      height: 180px;
+    .cover {
+      width: 100%;
+      height: 320px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .profile {
+      position: absolute;
+      left: 50%;
+      bottom: -70px;
+      transform: translateX(-50%);
+    }
+
+    .profile img {
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
       border: 5px solid white;
-      margin-bottom: 20px;
+      background: white;
     }
 
-    header h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
+    .header h1 {
+      margin-top: 90px;
+      font-size: 42px;
+      color: #d1d5db;
     }
 
-    header p {
-      font-size: 18px;
-      color: #cbd5e1;
+    .header p {
+      font-size: 22px;
+      margin-top: 10px;
+      color: #e5e7eb;
     }
 
     section {
       background: rgba(255, 255, 255, 0.08);
-      margin: 20px 0;
       padding: 30px;
+      margin-top: 30px;
       border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     }
 
     h2 {
-      margin-bottom: 20px;
       color: #38bdf8;
-      font-size: 28px;
+      margin-bottom: 20px;
+      font-size: 30px;
     }
 
     .info p {
@@ -76,18 +98,16 @@
     .contact-links a {
       display: inline-block;
       margin: 10px 10px 0 0;
-      padding: 12px 20px;
-      background: #38bdf8;
-      color: #0f172a;
+      padding: 10px 16px;
+      background: #0ea5e9;
+      color: white;
       text-decoration: none;
       border-radius: 10px;
-      font-weight: bold;
       transition: 0.3s;
     }
 
     .contact-links a:hover {
-      background: #0ea5e9;
-      color: white;
+      background: #0284c7;
     }
 
     .gallery {
@@ -108,37 +128,63 @@
       padding: 30px;
       color: #cbd5e1;
     }
+
+    @media (max-width: 768px) {
+      .cover {
+        height: 220px;
+      }
+
+      .profile img {
+        width: 130px;
+        height: 130px;
+      }
+
+      .profile {
+        bottom: -55px;
+      }
+
+      .header h1 {
+        margin-top: 75px;
+        font-size: 32px;
+      }
+
+      .header p {
+        font-size: 18px;
+      }
+    }
   </style>
-<header class="header">
+</head>
+<body>
 
-  <!-- Cover Photo -->
-  <div class="cover">
-    <img src="cover/cover-photo.jpg" alt="cover">
-  </div>
+  <div class="container">
 
-  <!-- Profile -->
-  <div class="profile">
-    <img src="profile.jpg" alt="profile">
-  </div>
+    <header class="header">
+      <div class="cover">
+        <img src="cover/cover-photo.jpg" alt="cover">
+      </div>
 
-  <h1>Md: Shamim</h1>
-  <p>আমার ব্যক্তিগত ওয়েবসাইটে আপনাকে স্বাগতম</p>
+      <div class="profile">
+        <img src="profile.jpg" alt="profile">
+      </div>
 
-</header>
+      <h1>Md: Shamim</h1>
+      <p>আমার ব্যক্তিগত ওয়েবসাইটে আপনাকে স্বাগতম</p>
+    </header>
+
     <section>
       <h2>আমার সম্পর্কে</h2>
       <div class="info">
-        <p><strong>নাম:</strong> Md: Shamim  </p>
-        <p><strong>ঠিকানা:</strong> Mohadevpur,Naogaon, Rajshahi </p>
-          <p><strong>বর্তমান ঠিকানা:</strong> Naogaon  </p>
-        <p><strong>পেশা:</strong> Freelancer </p>
-        <p><strong>ব্লাড গ্রুপ :</strong> A+ (Available Now) </p>
-        <p><strong>ইমেইল:</strong> md1713225@gmail.com </p>
+        <p><strong>নাম:</strong> Md: Shamim</p>
+        <p><strong>ঠিকানা:</strong> Mohadevpur, Naogaon, Rajshahi</p>
+        <p><strong>বর্তমান ঠিকানা:</strong> Naogaon</p>
+        <p><strong>পেশা:</strong> Freelancer</p>
+        <p><strong>ব্লাড গ্রুপ:</strong> A+ (Available Now)</p>
+        <p><strong>ইমেইল:</strong> md1713225@gmail.com</p>
         <p><strong>ফোন:</strong> 01857943730</p>
-        <p><strong>ফোন:</strong> 01738917693</p>
+        <p><strong>হোয়াটসঅ্যাপ:</strong> 01738917693</p>
         <p>
           আমি একজন সাধারণ মানুষ। এখানে আমার ব্যক্তিগত তথ্য, যোগাযোগের মাধ্যম,
-          এবং কিছু প্রিয় ছবি দেওয়া আছে।
+          এবং কিছু প্রিয় ছবি দেওয়া আছে।
         </p>
       </div>
     </section>
@@ -148,25 +194,27 @@
       <div class="contact-links">
         <a href="https://www.facebook.com/mdshamim0403" target="_blank">Facebook</a>
         <a href="https://www.instagram.com/mdshamim0403/" target="_blank">Instagram</a>
-        <a href="https://wa.me/8801857943730" target="_blank">WhatsApp</a>
-        <a href="https://t.me/mdshamim0403" target="_blank">Telegram</a>
-        <a href="https://www.tiktok.com/@mdshamim04030" target="_blank">Tiktok</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Telegram</a>
+        <a href="#">TikTok</a>
       </div>
     </section>
 
     <section>
-      <h2>আমার ছবি</h2>
+      <h2>গ্যালারি</h2>
       <div class="gallery">
-      <img src="pic1.jpg">
-      <img src="pic 2.jpg">
-      <img src="pic3.jpg">
-      <img src="pic4.png">
+        <img src="pic1.jpg" alt="pic1">
+        <img src="pic 2.jpg" alt="pic2">
+        <img src="pic3.jpg" alt="pic3">
+        <img src="pic4.png" alt="pic4">
       </div>
     </section>
 
     <footer>
-      <p>© 2026 আমার ব্যক্তিগত ওয়েবসাইট | সব স্বত্ব সংরক্ষিত</p>
+      <p>© 2025 Md Shamim | All Rights Reserved</p>
     </footer>
+
   </div>
+
 </body>
 </html>
