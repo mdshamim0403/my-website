@@ -1,1 +1,205 @@
-<!DOCTYPE html> <html lang="bn"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Md Shamim</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; min-height: 300px; } .container { width: 90%; max-width: 1000px; margin: auto; padding: 20px; } /* HEADER WITH COVER */ header { background: url("cover/cover-photo.jpg") center/cover no-repeat; padding: 80px 20px; border-radius: 20px; text-align: center; position: relative; margin-bottom: 40px; } /* dark overlay */ header::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); border-radius: 20px; } header * { position: relative; z-index: 1; } header img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-bottom: 15px; } header h1 { font-size: 40px; margin-bottom: 10px; } header p { font-size: 20px; } section { background: rgba(255,255,255,0.08); padding: 25px; border-radius: 15px; margin-bottom: 20px; } h2 { color: #38bdf8; margin-bottom: 15px; } .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; } .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; } .contact a { display: inline-block; margin: 5px; padding: 10px 15px; background: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; } header { background: url("cover/cover-photo.jpg"); background-size: cover; background-position: center; padding: 80px 20px; border-radius: 20px; } </style> </head> <body> <div class="container"> <!-- HEADER --> <header> <img src="profile.jpg" alt="profile"> <h1>Md: Shamim</h1> <p>আমার ব্যক্তিগত ওয়েবসাইটে আপনাকে স্বাগতম</p> </header> <!-- ABOUT --> <section> <h2>আমার সম্পর্কে</h2> <p>নাম: Md: Shamim</p> <p>ঠিকানা: Mohadevpur, Naogaon, Rajshahi</p> <p>বর্তমান ঠিকানা: Naogaon</p> <p>পেশা: Freelancer</p> <p>ব্লাড গ্রুপ : A+ (Available)</p> <p>ফোন নম্বর : 01857943730 </p> <p>ফোন নম্বর : 01738917693 </p> <p>ইমেইল: md1713225@gmail.com</p> </section> <!-- CONTACT --> <section> <h2>যোগাযোগ</h2> <div class="contact"> <a href="#">Facebook</a> <a href="#">Instagram</a> <a href="#">WhatsApp</a> </div> </section> <!-- GALLERY --> <section> <h2>আমার ছবি</h2> <div class="gallery"> <img src="pic1.jpg"> <img src="pic 2.jpg"> <img src="pic3.jpg"> <img src="pic4.png"> </div> </section> <footer> © 2025 Md Shamim
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Shamim</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("cover-photo.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      text-align: center;
+      padding: 50px 20px;
+      color: white;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      margin-bottom: 15px;
+      background: white;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    section {
+      background: white;
+      margin-top: 25px;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #0284c7;
+      margin-bottom: 15px;
+      font-size: 28px;
+      border-left: 5px solid #0ea5e9;
+      padding-left: 10px;
+    }
+
+    .about p {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .contact a {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #0ea5e9;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: #0284c7;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0 10px;
+      color: #6b7280;
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 35px 15px;
+      }
+
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      .about p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <img src="profile.jpg" alt="Profile Photo">
+      <h1>Md Shamim</h1>
+      <p>আমার ব্যক্তিগত ওয়েবসাইটে আপনাকে স্বাগতম</p>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <h2>আমার সম্পর্কে</h2>
+      <p><strong>নাম:</strong> Md Shamim</p>
+      <p><strong>ঠিকানা:</strong> Mohadevpur, Naogaon, Rajshahi</p>
+      <p><strong>বর্তমান ঠিকানা:</strong> Naogaon</p>
+      <p><strong>পেশা:</strong> Freelancer</p>
+      <p><strong>ব্লাড গ্রুপ:</strong> A+ (Available)</p>
+      <p><strong>ফোন নম্বর:</strong> 01857943730</p>
+      <p><strong>ফোন নম্বর:</strong> 01738917693</p>
+      <p><strong>ইমেইল:</strong> md1713225@gmail.com</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <h2>যোগাযোগ</h2>
+      <div class="contact">
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section>
+      <h2>আমার ছবি</h2>
+      <div class="gallery">
+        <img src="pic1.jpg" alt="Picture 1">
+        <img src="pic2.jpg" alt="Picture 2">
+        <img src="pic3.jpg" alt="Picture 3">
+        <img src="pic4.png" alt="Picture 4">
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Md Shamim | All Rights Reserved
+    </footer>
+
+  </div>
+
+</body>
+</html>
