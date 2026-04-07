@@ -214,7 +214,7 @@
 
 .gallery img {
   width: 100%;
-  aspect-ratio: 1 / 1;   /* 👉 এইটা নতুন */
+  height: 250px;
   object-fit: cover;
   border-radius: 14px;
 }
@@ -265,10 +265,12 @@
       .about p {
         font-size: 16px;
       }
-
+   .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    }
       .gallery img {
-        height: 200px;
-      }
+  height: 200px;
+} 
         header {
     padding: 35px 15px;
   }
